@@ -17,10 +17,11 @@
   - Good
     - flexible
   - Bad
-    - How to decide whether one breakpoint is enabled or not? Could one breakpoint have differnt condition if it's in different group?
-      - Group could be sorted. The breakpoint is decided by the first group it's in. Support different conditions.
-        - Variance: Add some special groups, like "enable group"/"disable group". If a breakpoint is in "disable group" and it's not enabled, the breakpoint is disabled.
-      - Add some more control ways. User could choose whether the breakpoint is enabled/disbaled
+    - Could one breakpoint have differnt conditions if it's in different group?
+    - How to decide whether one breakpoint is enabled or not?
+      - Group could be sorted. The breakpoint is decided by the first group it's in.
+        - Variance: Add some special groups, like "enable group"/"disable group". By this way, we do not need to sort. For example, we could give "Disable group" highest priority ---- if a breakpoint is in "disable group" and the group is not enabled, then the breakpoint is disabled, no matter whatever other groups is like.
+      - Add some more control ways. User could choose whether the breakpoint is enabled/disbaled by the relation between the groups.
       - Only one breakpoint is active. User must change the active breakpoint explicitly.
 
 ## nested group, could some group manage some other groups?
